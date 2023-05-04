@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quick Check</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/index.css">
+        <link rel="shortcut icon" href="../static/image/logo.png"
+            type="image/x-icon">
+
+    </head>
+
+    <body>
+
+        <header class="header">
+
+            <div class="logo">
+                <img src="../static/image/logo.png" alt="Logo Qura">
+            </div>
+            
+
+            <div class="links">
+                <li>
+                    <a href="{{url_for('landing')}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{url_for('about')}}">AboutUs</a>
+                </li>
+
+                <li>
+                    <a
+                        href="{{url_for('help')}}">Help</a>
+                </li>
+
+                <!-- <li>
+                    <a href="#">Blogs</a>
+                </li> -->
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <div class="section">
+                <h1>
+                    <i>Get The<br>
+                        Real Story<br></i>
+                </h1>
+
+                <p>
+                    Welcome, your go-to source for detecting and debunking fake
+                    <br>
+                    news. Our cutting-edge technology and expert analysis enable
+                    <br>
+                    you to identify and verify the truth that ensuring that you
+                    have <br>
+                    access to reliable and accurate information. Join us in the
+                    fight<br>
+                    against misinformation and take the first step towards a
+                    more <br>
+                    informed society.<br>
+                </p>
+
+                <a href="{{url_for('fact')}}" class="start">Check Now</a>
+            </div>
+
+            <div class="image">
+                <img src="../static/image/background.png" alt="background">
+            </div>
+
+
+        </main>
+
+
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+
+                <div class="row">
+                    <ul>
+                        <li><a href="./help.html">Contact us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    Quick Check Copyright © 2023 Quick Check - All rights
+                    reserved || Designed By: Sparsh & Varun
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Telex&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Telex';
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo
+{
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    background-color: #eeee;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 6vw;
+}
+
+.links {
+    display: flex;
+    gap: 46px;
+    padding-bottom: 40px;
+}
+
+.links li a {
+    color: #000;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.links li a:hover {
+    color: #D6AFE2;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.btn {
+    color: #000;
+    border: 2px solid #000;
+    padding: 7px 24px;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.two {
+    color: #fff;
+    border: none;
+    background-color: #000;
+}
+
+.one:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.two:hover {
+    background-color: #D6AFE2;
+}
+
+
+main {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section {
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section h1 {
+    font-family: 'Telex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 112%;
+    color: #000000;
+}
+
+.section p {
+    font-family: 'Telex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6C6C6C;
+}
+
+.section a {
+    font-family: 'Telex';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+}
+
+
+
+.image img {
+    width: 600px;
+    padding-right: 50px;
+}
+
+.start{
+    background-image: linear-gradient(to right, #AE59C3, #6DECCD, #DBFF00);
+    width: fit-content;
+    font-size: 14px;
+    padding: 10px 26px;
+    border-radius: 15px;
+    border: 4px solid white;
+    box-shadow: 0px 20px 35px rgba(63, 26, 75, 0.14);
+}
+    .footer{
+    background:#e6e6fa;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }

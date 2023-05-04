@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+	
+		<title> Quick Check </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../static/image/logo.png" type="image/x-icon">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+			rel="stylesheet">
+		<link rel="shortcut icon" href="../static/image/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="../static/css/fact.css">
+		<style>
+
+		body {
+
+			margin:  0;
+			font-family: 'Times New Roman';
+            background-color: #eeee;
+
+		}
+		h1  {
+			padding: 15px;
+			color:rgb(0, 255, 255);
+			margin-top: 0px;
+			text-align: center;
+
+		}
+
+
+		h2 {
+			padding-top: 0px;
+			padding-right: 30px;
+			color: black;
+			text-align: center;
+
+		}
+
+		div.header {
+
+			background-color: #eeee;
+    		position:sticky;
+    		top:0;
+    		width:100%;
+			height: 160px;
+    		z-index:100;
+
+		}
+
+
+		p {
+
+			padding:  15px;
+
+		}
+
+		p.title {
+			display:  inline-block;
+		}
+
+		form {
+			display:  inline-block;
+		}
+
+		p.result {
+			display: inline-block;
+		}
+
+
+	</style>
+	</head>
+	<body>
+
+
+		<header class="header">
+
+            <div class="logo">
+                <img src="../static/image/logo.png" alt="Logo Qura">
+            </div>
+            
+
+            <div class="links">
+                <li>
+                    <a href="{{url_for('landing')}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{url_for('about')}}">AboutUs</a>
+                </li>
+
+                <li>
+                    <a
+                        href="{{url_for('help')}}">Help</a>
+                </li>
+
+                <!-- <li>
+                    <a href="#">Blogs</a>
+                </li> -->
+            </div>
+
+        </header>
+
+
+
+
+
+
+		<div class="header">
+			<h1> </h1>
+			<h2 >IS YOUR NEWS ARTICLE FAKE OR TRUE?</h2>
+			<br>
+		</div>
+
+		<div class="mid">
+			<p class="title"> <b>ENTER NEWS</b> </p>
+			<form action="/sub" method="POST">
+				<input type="text" name="news" size="50">
+				&nbsp; &nbsp;
+				<select name='modelType'>
+					<option value='dense'> Gensim Doc2Vec + ANN</option>
+					<option value='lstm'> Tensorflow_hub Word2Vec + LSTM</option>
+					<option value='bert'> BERT </option>
+					<option value='hindi'> HINDI </option>
+				</select>
+				<input type="submit">
+			</form>
+			<br>
+			{%if official %}
+			<p class="result"> News is: </p> {{official}}
+			{% endif %}
+		</div>
+
+		<footer>
+			<div class="footer">
+				<div class="row">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+				</div>
+
+				<div class="row">
+					<ul>
+						<li><a href="{{url_for('help')}}">Contact us</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</div>
+
+				<div class="row">
+					Quick Check Copyright © 2023 Quick Check - All rights reserved || Designed
+					By: Sparsh & Varun
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
